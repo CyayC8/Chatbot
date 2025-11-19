@@ -1,0 +1,1759 @@
+{
+  "settings": {
+    "languages": [
+      "nl"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "nl"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "nl": {
+        "settings": {
+          "locale": "nl",
+          "trainByDomain": false,
+          "tag": "domain-manager-nl",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "dor,ik,moet,nu": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "dor,ga,ik": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "dag": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "tot,zien": {
+            "intent": "begroeting.dag",
+            "domain": "default"
+          },
+          "hallo": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "howdy": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "dar,hey": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "goedendag": {
+            "intent": "begroeting.hallo",
+            "domain": "default"
+          },
+          "broer,heb,je,of,zuss": {
+            "intent": "informatie.familie",
+            "domain": "default"
+          },
+          "familieled,jouw,wie,zijn": {
+            "intent": "informatie.familie",
+            "domain": "default"
+          },
+          "familie,iet,je,kun,over,vertell": {
+            "intent": "informatie.familie",
+            "domain": "default"
+          },
+          "hobby,jouw,s,wat,zijn": {
+            "intent": "informatie.hobby",
+            "domain": "default"
+          },
+          "doe,grag,in,je,tijd,vrij,wat": {
+            "intent": "informatie.hobby",
+            "domain": "default"
+          },
+          "doen,je,leuk,om,te,vind,wat": {
+            "intent": "informatie.hobby",
+            "domain": "default"
+          },
+          "ben,hoe,je,oud": {
+            "intent": "informatie.leeftijd",
+            "domain": "default"
+          },
+          "is,je,leeftijd,wat": {
+            "intent": "informatie.leeftijd",
+            "domain": "default"
+          },
+          "30,ben,dan,je,ouder": {
+            "intent": "informatie.leeftijd",
+            "domain": "default"
+          },
+          "is,jouw,nam,wat": {
+            "intent": "informatie.naam",
+            "domain": "default"
+          },
+          "het,hoe,jij": {
+            "intent": "informatie.naam",
+            "domain": "default"
+          },
+          "hoe,ik,je,mag,noem": {
+            "intent": "informatie.naam",
+            "domain": "default"
+          },
+          "gekreg,heb,je,nam,welk": {
+            "intent": "informatie.naam",
+            "domain": "default"
+          },
+          "een,heb,je,partner": {
+            "intent": "informatie.relatie",
+            "domain": "default"
+          },
+          "ben,een,in,je,relatie": {
+            "intent": "informatie.relatie",
+            "domain": "default"
+          },
+          "je,met,sam,wie,won": {
+            "intent": "informatie.relatie",
+            "domain": "default"
+          },
+          "je,werk": {
+            "intent": "informatie.studie",
+            "domain": "default"
+          },
+          "doe,je,vor,wat,werk": {
+            "intent": "informatie.studie",
+            "domain": "default"
+          },
+          "focus,je,op,war": {
+            "intent": "informatie.studie",
+            "domain": "default"
+          },
+          "je,war,won": {
+            "intent": "informatie.woonplaats",
+            "domain": "default"
+          },
+          "in,je,stad,welk,won": {
+            "intent": "informatie.woonplaats",
+            "domain": "default"
+          },
+          "ben,gevestigd,je,war": {
+            "intent": "informatie.woonplaats",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "begroeting.dag": "default",
+          "begroeting.hallo": "default",
+          "informatie.familie": "default",
+          "informatie.hobby": "default",
+          "informatie.leeftijd": "default",
+          "informatie.naam": "default",
+          "informatie.relatie": "default",
+          "informatie.studie": "default",
+          "informatie.woonplaats": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Ik moet door nu.",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ik ga door.",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dag.",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tot ziens.",
+            "intent": "begroeting.dag"
+          },
+          {
+            "domain": "default",
+            "utterance": "hallo",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hey daar!",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Goedendag!",
+            "intent": "begroeting.hallo"
+          },
+          {
+            "domain": "default",
+            "utterance": "Heb je broers of zussen?",
+            "intent": "informatie.familie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wie zijn jouw familieleden?",
+            "intent": "informatie.familie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Kun je iets vertellen over je familie?",
+            "intent": "informatie.familie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wat zijn jouw hobby's?",
+            "intent": "informatie.hobby"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wat doe je graag in je vrije tijd?",
+            "intent": "informatie.hobby"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wat vind je leuk om te doen?",
+            "intent": "informatie.hobby"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hoe oud ben je?",
+            "intent": "informatie.leeftijd"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wat is je leeftijd?",
+            "intent": "informatie.leeftijd"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ben je ouder dan 30?",
+            "intent": "informatie.leeftijd"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wat is jouw naam?",
+            "intent": "informatie.naam"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hoe heet jij?",
+            "intent": "informatie.naam"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hoe mag ik je noemen?",
+            "intent": "informatie.naam"
+          },
+          {
+            "domain": "default",
+            "utterance": "Welke naam heb je gekregen?",
+            "intent": "informatie.naam"
+          },
+          {
+            "domain": "default",
+            "utterance": "Heb je een partner?",
+            "intent": "informatie.relatie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ben je in een relatie?",
+            "intent": "informatie.relatie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Met wie woon je samen?",
+            "intent": "informatie.relatie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Werk je?",
+            "intent": "informatie.studie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wat doe je voor werk?",
+            "intent": "informatie.studie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Waar focus je je op?",
+            "intent": "informatie.studie"
+          },
+          {
+            "domain": "default",
+            "utterance": "Waar woon je?",
+            "intent": "informatie.woonplaats"
+          },
+          {
+            "domain": "default",
+            "utterance": "In welke stad woon je?",
+            "intent": "informatie.woonplaats"
+          },
+          {
+            "domain": "default",
+            "utterance": "Waar ben je gevestigd?",
+            "intent": "informatie.woonplaats"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "nl",
+              "tag": "nlu-nl",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "30": 1,
+              "ik": 1,
+              "moet": 1,
+              "dor": 1,
+              "nu": 1,
+              "ga": 1,
+              "dag": 1,
+              "tot": 1,
+              "zien": 1,
+              "hallo": 1,
+              "hey": 1,
+              "howdy": 1,
+              "dar": 1,
+              "goedendag": 1,
+              "heb": 1,
+              "je": 1,
+              "broer": 1,
+              "of": 1,
+              "zuss": 1,
+              "wie": 1,
+              "zijn": 1,
+              "jouw": 1,
+              "familieled": 1,
+              "kun": 1,
+              "iet": 1,
+              "vertell": 1,
+              "over": 1,
+              "familie": 1,
+              "wat": 1,
+              "hobby": 1,
+              "s": 1,
+              "doe": 1,
+              "grag": 1,
+              "in": 1,
+              "vrij": 1,
+              "tijd": 1,
+              "vind": 1,
+              "leuk": 1,
+              "om": 1,
+              "te": 1,
+              "doen": 1,
+              "hoe": 1,
+              "oud": 1,
+              "ben": 1,
+              "is": 1,
+              "leeftijd": 1,
+              "ouder": 1,
+              "dan": 1,
+              "nam": 1,
+              "het": 1,
+              "jij": 1,
+              "mag": 1,
+              "noem": 1,
+              "welk": 1,
+              "gekreg": 1,
+              "een": 1,
+              "partner": 1,
+              "relatie": 1,
+              "met": 1,
+              "won": 1,
+              "sam": 1,
+              "werk": 1,
+              "vor": 1,
+              "war": 1,
+              "focus": 1,
+              "op": 1,
+              "stad": 1,
+              "gevestigd": 1
+            },
+            "intents": {
+              "begroeting.dag": 1,
+              "begroeting.hallo": 1,
+              "informatie.familie": 1,
+              "informatie.hobby": 1,
+              "informatie.leeftijd": 1,
+              "informatie.naam": 1,
+              "informatie.relatie": 1,
+              "informatie.studie": 1,
+              "informatie.woonplaats": 1
+            },
+            "intentFeatures": {
+              "begroeting.dag": {
+                "ik": 1,
+                "moet": 1,
+                "dor": 1,
+                "nu": 1,
+                "ga": 1,
+                "dag": 1,
+                "tot": 1,
+                "zien": 1
+              },
+              "begroeting.hallo": {
+                "hallo": 1,
+                "hey": 1,
+                "howdy": 1,
+                "dar": 1,
+                "goedendag": 1
+              },
+              "informatie.familie": {
+                "heb": 1,
+                "je": 1,
+                "broer": 1,
+                "of": 1,
+                "zuss": 1,
+                "wie": 1,
+                "zijn": 1,
+                "jouw": 1,
+                "familieled": 1,
+                "kun": 1,
+                "iet": 1,
+                "vertell": 1,
+                "over": 1,
+                "familie": 1
+              },
+              "informatie.hobby": {
+                "wat": 1,
+                "zijn": 1,
+                "jouw": 1,
+                "hobby": 1,
+                "s": 1,
+                "doe": 1,
+                "je": 1,
+                "grag": 1,
+                "in": 1,
+                "vrij": 1,
+                "tijd": 1,
+                "vind": 1,
+                "leuk": 1,
+                "om": 1,
+                "te": 1,
+                "doen": 1
+              },
+              "informatie.leeftijd": {
+                "30": 1,
+                "hoe": 1,
+                "oud": 1,
+                "ben": 1,
+                "je": 1,
+                "wat": 1,
+                "is": 1,
+                "leeftijd": 1,
+                "ouder": 1,
+                "dan": 1
+              },
+              "informatie.naam": {
+                "wat": 1,
+                "is": 1,
+                "jouw": 1,
+                "nam": 1,
+                "hoe": 1,
+                "het": 1,
+                "jij": 1,
+                "mag": 1,
+                "ik": 1,
+                "je": 1,
+                "noem": 1,
+                "welk": 1,
+                "heb": 1,
+                "gekreg": 1
+              },
+              "informatie.relatie": {
+                "heb": 1,
+                "je": 1,
+                "een": 1,
+                "partner": 1,
+                "ben": 1,
+                "in": 1,
+                "relatie": 1,
+                "met": 1,
+                "wie": 1,
+                "won": 1,
+                "sam": 1
+              },
+              "informatie.studie": {
+                "werk": 1,
+                "je": 1,
+                "wat": 1,
+                "doe": 1,
+                "vor": 1,
+                "war": 1,
+                "focus": 1,
+                "op": 1
+              },
+              "informatie.woonplaats": {
+                "war": 1,
+                "won": 1,
+                "je": 1,
+                "in": 1,
+                "welk": 1,
+                "stad": 1,
+                "ben": 1,
+                "gevestigd": 1
+              }
+            },
+            "featuresToIntent": {
+              "30": [
+                "informatie.leeftijd"
+              ],
+              "ik": [
+                "begroeting.dag",
+                "informatie.naam"
+              ],
+              "moet": [
+                "begroeting.dag"
+              ],
+              "dor": [
+                "begroeting.dag"
+              ],
+              "nu": [
+                "begroeting.dag"
+              ],
+              "ga": [
+                "begroeting.dag"
+              ],
+              "dag": [
+                "begroeting.dag"
+              ],
+              "tot": [
+                "begroeting.dag"
+              ],
+              "zien": [
+                "begroeting.dag"
+              ],
+              "hallo": [
+                "begroeting.hallo"
+              ],
+              "hey": [
+                "begroeting.hallo"
+              ],
+              "howdy": [
+                "begroeting.hallo"
+              ],
+              "dar": [
+                "begroeting.hallo"
+              ],
+              "goedendag": [
+                "begroeting.hallo"
+              ],
+              "heb": [
+                "informatie.familie",
+                "informatie.naam",
+                "informatie.relatie"
+              ],
+              "je": [
+                "informatie.familie",
+                "informatie.hobby",
+                "informatie.leeftijd",
+                "informatie.naam",
+                "informatie.relatie",
+                "informatie.studie",
+                "informatie.woonplaats"
+              ],
+              "broer": [
+                "informatie.familie"
+              ],
+              "of": [
+                "informatie.familie"
+              ],
+              "zuss": [
+                "informatie.familie"
+              ],
+              "wie": [
+                "informatie.familie",
+                "informatie.relatie"
+              ],
+              "zijn": [
+                "informatie.familie",
+                "informatie.hobby"
+              ],
+              "jouw": [
+                "informatie.familie",
+                "informatie.hobby",
+                "informatie.naam"
+              ],
+              "familieled": [
+                "informatie.familie"
+              ],
+              "kun": [
+                "informatie.familie"
+              ],
+              "iet": [
+                "informatie.familie"
+              ],
+              "vertell": [
+                "informatie.familie"
+              ],
+              "over": [
+                "informatie.familie"
+              ],
+              "familie": [
+                "informatie.familie"
+              ],
+              "wat": [
+                "informatie.hobby",
+                "informatie.leeftijd",
+                "informatie.naam",
+                "informatie.studie"
+              ],
+              "hobby": [
+                "informatie.hobby"
+              ],
+              "s": [
+                "informatie.hobby"
+              ],
+              "doe": [
+                "informatie.hobby",
+                "informatie.studie"
+              ],
+              "grag": [
+                "informatie.hobby"
+              ],
+              "in": [
+                "informatie.hobby",
+                "informatie.relatie",
+                "informatie.woonplaats"
+              ],
+              "vrij": [
+                "informatie.hobby"
+              ],
+              "tijd": [
+                "informatie.hobby"
+              ],
+              "vind": [
+                "informatie.hobby"
+              ],
+              "leuk": [
+                "informatie.hobby"
+              ],
+              "om": [
+                "informatie.hobby"
+              ],
+              "te": [
+                "informatie.hobby"
+              ],
+              "doen": [
+                "informatie.hobby"
+              ],
+              "hoe": [
+                "informatie.leeftijd",
+                "informatie.naam"
+              ],
+              "oud": [
+                "informatie.leeftijd"
+              ],
+              "ben": [
+                "informatie.leeftijd",
+                "informatie.relatie",
+                "informatie.woonplaats"
+              ],
+              "is": [
+                "informatie.leeftijd",
+                "informatie.naam"
+              ],
+              "leeftijd": [
+                "informatie.leeftijd"
+              ],
+              "ouder": [
+                "informatie.leeftijd"
+              ],
+              "dan": [
+                "informatie.leeftijd"
+              ],
+              "nam": [
+                "informatie.naam"
+              ],
+              "het": [
+                "informatie.naam"
+              ],
+              "jij": [
+                "informatie.naam"
+              ],
+              "mag": [
+                "informatie.naam"
+              ],
+              "noem": [
+                "informatie.naam"
+              ],
+              "welk": [
+                "informatie.naam",
+                "informatie.woonplaats"
+              ],
+              "gekreg": [
+                "informatie.naam"
+              ],
+              "een": [
+                "informatie.relatie"
+              ],
+              "partner": [
+                "informatie.relatie"
+              ],
+              "relatie": [
+                "informatie.relatie"
+              ],
+              "met": [
+                "informatie.relatie"
+              ],
+              "won": [
+                "informatie.relatie",
+                "informatie.woonplaats"
+              ],
+              "sam": [
+                "informatie.relatie"
+              ],
+              "werk": [
+                "informatie.studie"
+              ],
+              "vor": [
+                "informatie.studie"
+              ],
+              "war": [
+                "informatie.studie",
+                "informatie.woonplaats"
+              ],
+              "focus": [
+                "informatie.studie"
+              ],
+              "op": [
+                "informatie.studie"
+              ],
+              "stad": [
+                "informatie.woonplaats"
+              ],
+              "gevestigd": [
+                "informatie.woonplaats"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "nl",
+                "tag": "nlu-nl",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "ik",
+                "moet",
+                "dor",
+                "nu",
+                "ga",
+                "dag",
+                "tot",
+                "zien",
+                "hallo",
+                "hey",
+                "howdy",
+                "dar",
+                "goedendag",
+                "heb",
+                "je",
+                "broer",
+                "of",
+                "zuss",
+                "wie",
+                "zijn",
+                "jouw",
+                "familieled",
+                "kun",
+                "iet",
+                "vertell",
+                "over",
+                "familie",
+                "wat",
+                "hobby",
+                "s",
+                "doe",
+                "grag",
+                "in",
+                "vrij",
+                "tijd",
+                "vind",
+                "leuk",
+                "om",
+                "te",
+                "doen",
+                "hoe",
+                "oud",
+                "ben",
+                "is",
+                "leeftijd",
+                "30",
+                "ouder",
+                "dan",
+                "nam",
+                "het",
+                "jij",
+                "mag",
+                "noem",
+                "welk",
+                "gekreg",
+                "een",
+                "partner",
+                "relatie",
+                "met",
+                "won",
+                "sam",
+                "werk",
+                "vor",
+                "war",
+                "focus",
+                "op",
+                "stad",
+                "gevestigd"
+              ],
+              "intents": [
+                "begroeting.dag",
+                "begroeting.hallo",
+                "informatie.familie",
+                "informatie.hobby",
+                "informatie.leeftijd",
+                "informatie.naam",
+                "informatie.relatie",
+                "informatie.studie",
+                "informatie.woonplaats"
+              ],
+              "perceptrons": [
+                [
+                  3.581646203994751,
+                  1.5681378841400146,
+                  4.6870551109313965,
+                  1.5681378841400146,
+                  3.119332790374756,
+                  10.800883293151855,
+                  5.67506217956543,
+                  5.67506217956543,
+                  -2.7818827629089355,
+                  -2.818807363510132,
+                  -2.7427124977111816,
+                  -0.7776100635528564,
+                  -2.7156426906585693,
+                  -0.3012557923793793,
+                  -2.6565585136413574,
+                  -0.19292448461055756,
+                  -0.19292448461055756,
+                  -0.19292448461055756,
+                  -0.5253711938858032,
+                  -0.749274492263794,
+                  -1.115240216255188,
+                  -0.5004884004592896,
+                  -0.1711336374282837,
+                  -0.1711336374282837,
+                  -0.1711336374282837,
+                  -0.1711336374282837,
+                  -0.1711336374282837,
+                  -0.9300186634063721,
+                  -0.2133779376745224,
+                  -0.2133779376745224,
+                  -0.08566455543041229,
+                  -0.08566455543041229,
+                  -0.13842730224132538,
+                  -0.08566455543041229,
+                  -0.08566455543041229,
+                  -0.07126206904649734,
+                  -0.07126206904649734,
+                  -0.07126206904649734,
+                  -0.07126206904649734,
+                  -0.07126206904649734,
+                  -1.7924987077713013,
+                  -0.10848523676395416,
+                  -0.27809250354766846,
+                  -0.4444783329963684,
+                  -0.06373464316129684,
+                  -0.12586285173892975,
+                  -0.12586285173892975,
+                  -0.12586285173892975,
+                  -0.40029042959213257,
+                  -0.5500297546386719,
+                  -0.5500297546386719,
+                  -1.0737953186035156,
+                  -1.0737953186035156,
+                  -0.03734990954399109,
+                  -0.023271963000297546,
+                  -0.03956503048539162,
+                  -0.027980845421552658,
+                  -0.005985513795167208,
+                  -0.016341207548975945,
+                  -0.09985493123531342,
+                  -0.016341207548975945,
+                  -0.22821922600269318,
+                  0,
+                  -0.1377556473016739,
+                  -0.06592555344104767,
+                  -0.06592555344104767,
+                  -0.004643983673304319,
+                  -0.0003739884705282748,
+                  2.891282093788688
+                ],
+                [
+                  -2.357604742050171,
+                  -0.8629014492034912,
+                  -2.2708051204681396,
+                  -0.8629014492034912,
+                  -1.3855149745941162,
+                  -5.41459321975708,
+                  -2.96378493309021,
+                  -2.96378493309021,
+                  8.06196117401123,
+                  7.598773002624512,
+                  8.032111167907715,
+                  1.0694429874420166,
+                  7.99696683883667,
+                  -0.8202025294303894,
+                  -4.744167804718018,
+                  -0.38041433691978455,
+                  -0.38041433691978455,
+                  -0.38041433691978455,
+                  -1.1729005575180054,
+                  -1.4946526288986206,
+                  -2.3204355239868164,
+                  -1.0464882850646973,
+                  -0.3443722128868103,
+                  -0.3443722128868103,
+                  -0.3443722128868103,
+                  -0.3443722128868103,
+                  -0.3443722128868103,
+                  -1.7999157905578613,
+                  -0.4047563970088959,
+                  -0.4047563970088959,
+                  -0.13608969748020172,
+                  -0.13608969748020172,
+                  -0.4186026453971863,
+                  -0.13608969748020172,
+                  -0.13608969748020172,
+                  -0.14854373037815094,
+                  -0.14854373037815094,
+                  -0.14854373037815094,
+                  -0.14854373037815094,
+                  -0.14854373037815094,
+                  -2.243894338607788,
+                  -0.2289954572916031,
+                  -0.6954339742660522,
+                  -0.9638198614120483,
+                  -0.10827412456274033,
+                  -0.3096083104610443,
+                  -0.3096083104610443,
+                  -0.3096083104610443,
+                  -0.9484743475914001,
+                  -1.8902753591537476,
+                  -1.8902753591537476,
+                  -0.05659530684351921,
+                  -0.05659530684351921,
+                  -0.23872904479503632,
+                  -0.10358984768390656,
+                  -0.35517188906669617,
+                  -0.25548654794692993,
+                  -0.09202802926301956,
+                  -0.11254619807004929,
+                  -0.5968277454376221,
+                  -0.11254619807004929,
+                  -1.2503774166107178,
+                  0,
+                  -0.7198154330253601,
+                  -0.3511241674423218,
+                  -0.3511241674423218,
+                  -0.11507760733366013,
+                  -0.00811769999563694,
+                  6.035714902629872
+                ],
+                [
+                  -0.47385361790657043,
+                  -0.050328683108091354,
+                  -0.11453282088041306,
+                  -0.050328683108091354,
+                  -0.04865425452589989,
+                  -0.3502762019634247,
+                  -0.21629105508327484,
+                  -0.21629105508327484,
+                  -0.34618520736694336,
+                  -0.36845746636390686,
+                  -0.3431396186351776,
+                  -0.1280040442943573,
+                  -0.34046387672424316,
+                  1.8581949472427368,
+                  0.14380694925785065,
+                  3.979487180709839,
+                  3.979487180709839,
+                  3.979487180709839,
+                  3.4353466033935547,
+                  3.0132029056549072,
+                  2.7865657806396484,
+                  4.704600811004639,
+                  2.7592530250549316,
+                  2.7592530250549316,
+                  2.7592530250549316,
+                  2.7592530250549316,
+                  2.7592530250549316,
+                  -2.7625317573547363,
+                  -1.6913949251174927,
+                  -1.6913949251174927,
+                  -0.16838189959526062,
+                  -0.16838189959526062,
+                  -0.34738239645957947,
+                  -0.16838189959526062,
+                  -0.16838189959526062,
+                  -0.22992223501205444,
+                  -0.22992223501205444,
+                  -0.22992223501205444,
+                  -0.22992223501205444,
+                  -0.22992223501205444,
+                  -0.9302839636802673,
+                  -0.3370140492916107,
+                  -0.9603705406188965,
+                  -0.48439115285873413,
+                  -0.22245128452777863,
+                  -0.36362016201019287,
+                  -0.36362016201019287,
+                  -0.36362016201019287,
+                  -1.085806965827942,
+                  -0.1242164596915245,
+                  -0.1242164596915245,
+                  -0.3041076958179474,
+                  -0.3041076958179474,
+                  -0.8639063835144043,
+                  -0.8535731434822083,
+                  -1.2966970205307007,
+                  -1.1903427839279175,
+                  -0.08373989909887314,
+                  -1.2692084312438965,
+                  -1.386465311050415,
+                  -1.2692084312438965,
+                  -0.5752081871032715,
+                  0,
+                  -0.39037060737609863,
+                  -0.26972782611846924,
+                  -0.26972782611846924,
+                  -0.005009740591049194,
+                  -0.0025431893300265074,
+                  0.3453666866584585
+                ],
+                [
+                  -0.24065908789634705,
+                  -0.003439151681959629,
+                  -0.0047049447894096375,
+                  -0.003439151681959629,
+                  -0.00028652918990701437,
+                  -0.041950616985559464,
+                  -0.03710075840353966,
+                  -0.03710075840353966,
+                  -0.038923606276512146,
+                  -0.06547139585018158,
+                  -0.03613950312137604,
+                  -0.02359074354171753,
+                  -0.033721908926963806,
+                  -0.3649339973926544,
+                  -0.7491963505744934,
+                  -0.003270959248766303,
+                  -0.003270959248766303,
+                  -0.003270959248766303,
+                  -1.556795358657837,
+                  2.3145313262939453,
+                  0.7831218838691711,
+                  -1.3772631883621216,
+                  -0.009194213896989822,
+                  -0.009194213896989822,
+                  -0.009194213896989822,
+                  -0.009194213896989822,
+                  -0.009194213896989822,
+                  3.9682629108428955,
+                  3.6919610500335693,
+                  3.6919610500335693,
+                  0.8787146210670471,
+                  2.7761526107788086,
+                  2.0236308574676514,
+                  2.7761526107788086,
+                  2.7761526107788086,
+                  2.2461295127868652,
+                  2.2461295127868652,
+                  2.2461295127868652,
+                  2.2461295127868652,
+                  2.2461295127868652,
+                  -0.5684641599655151,
+                  -0.21781954169273376,
+                  -0.9615389704704285,
+                  -2.8485076427459717,
+                  -1.1652921438217163,
+                  -0.2008938193321228,
+                  -0.2008938193321228,
+                  -0.2008938193321228,
+                  -1.7390129566192627,
+                  -0.0452590174973011,
+                  -0.0452590174973011,
+                  -0.16561216115951538,
+                  -0.16561216115951538,
+                  -0.5332735776901245,
+                  -0.14344170689582825,
+                  -0.5518622398376465,
+                  -0.14240972697734833,
+                  -0.3395290672779083,
+                  -0.11739293485879898,
+                  -0.5407564043998718,
+                  -0.11739293485879898,
+                  -2.057950496673584,
+                  -1.8790342807769775,
+                  -0.11507944017648697,
+                  -0.07383246719837189,
+                  -0.07383246719837189,
+                  -0.32635268568992615,
+                  0,
+                  -0.16406561401139536
+                ],
+                [
+                  -1.6220303773880005,
+                  -0.0002878183440770954,
+                  -0.0002878183440770954,
+                  -0.0002878183440770954,
+                  0,
+                  -0.008944348432123661,
+                  -0.0083861593157053,
+                  -0.0083861593157053,
+                  -0.008234482258558273,
+                  -0.01724691316485405,
+                  -0.0075836628675460815,
+                  -0.006420215126127005,
+                  -0.0070103066973388195,
+                  -1.2592898607254028,
+                  2.6151933670043945,
+                  -0.27320554852485657,
+                  -0.27320554852485657,
+                  -0.27320554852485657,
+                  -0.5030233263969421,
+                  -0.10028991103172302,
+                  -2.482959508895874,
+                  0,
+                  -0.41570723056793213,
+                  -0.41570723056793213,
+                  -0.41570723056793213,
+                  -0.41570723056793213,
+                  -0.41570723056793213,
+                  1.8910181522369385,
+                  -0.10028991103172302,
+                  -0.10028991103172302,
+                  -1.1502130031585693,
+                  -0.25580838322639465,
+                  -2.048905372619629,
+                  -0.25580838322639465,
+                  -0.25580838322639465,
+                  -0.7931268215179443,
+                  -0.7931268215179443,
+                  -0.7931268215179443,
+                  -0.7931268215179443,
+                  -0.7931268215179443,
+                  2.784128189086914,
+                  5.526504039764404,
+                  3.879908323287964,
+                  3.9648404121398926,
+                  6.315907001495361,
+                  2.7743136882781982,
+                  2.7743136882781982,
+                  2.7743136882781982,
+                  -2.820892333984375,
+                  -1.1224615573883057,
+                  -1.1224615573883057,
+                  -1.621455192565918,
+                  -1.621455192565918,
+                  -0.46582159399986267,
+                  -0.3659534156322479,
+                  -2.230226755142212,
+                  -0.4545017182826996,
+                  -1.7112691402435303,
+                  -0.5030233263969421,
+                  -0.793090283870697,
+                  -0.5030233263969421,
+                  -2.0500640869140625,
+                  -0.8911656737327576,
+                  -3.2608537673950195,
+                  -0.3392077684402466,
+                  -0.3392077684402466,
+                  -0.04284922033548355,
+                  -2.689481258392334,
+                  -0.5370068692178348
+                ],
+                [
+                  2.1990365982055664,
+                  -0.6086962819099426,
+                  -1.6248493194580078,
+                  -0.6086962819099426,
+                  -0.9614836573600769,
+                  -0.45825526118278503,
+                  -0.3216383755207062,
+                  -0.3216383755207062,
+                  -0.44505760073661804,
+                  -0.5321504473686218,
+                  -0.430664986371994,
+                  -0.1888614445924759,
+                  -0.42111971974372864,
+                  1.8748729228973389,
+                  -1.7867175340652466,
+                  -0.5446687340736389,
+                  -0.5446687340736389,
+                  -0.5446687340736389,
+                  -0.9739528894424438,
+                  -1.6631642580032349,
+                  2.805393695831299,
+                  -0.5537165999412537,
+                  -0.10864073783159256,
+                  -0.10864073783159256,
+                  -0.10864073783159256,
+                  -0.10864073783159256,
+                  -0.10864073783159256,
+                  0.6901910305023193,
+                  -1.1085680723190308,
+                  -1.1085680723190308,
+                  -0.5107905864715576,
+                  -0.036190155893564224,
+                  -0.9234080910682678,
+                  -0.036190155893564224,
+                  -0.036190155893564224,
+                  -0.22653846442699432,
+                  -0.22653846442699432,
+                  -0.22653846442699432,
+                  -0.22653846442699432,
+                  -0.22653846442699432,
+                  5.823765754699707,
+                  -2.0231919288635254,
+                  -2.534518241882324,
+                  2.600111246109009,
+                  -1.8660374879837036,
+                  0,
+                  0,
+                  0,
+                  7.766715049743652,
+                  4.0380072593688965,
+                  4.0380072593688965,
+                  3.8237006664276123,
+                  3.8237006664276123,
+                  2.7447762489318848,
+                  3.297156572341919,
+                  -1.1380279064178467,
+                  -0.759074866771698,
+                  -0.25037795305252075,
+                  -0.34653356671333313,
+                  -1.137453556060791,
+                  -0.34653356671333313,
+                  -0.9988129138946533,
+                  -0.4249555468559265,
+                  -0.7070844173431396,
+                  -0.2931262254714966,
+                  -0.2931262254714966,
+                  -0.48227745294570923,
+                  -0.09149179607629776,
+                  0.39216138431170955
+                ],
+                [
+                  -0.1851162165403366,
+                  -0.05638813227415085,
+                  -0.12300392240285873,
+                  -0.05638813227415085,
+                  -0.05020055174827576,
+                  -0.10456386208534241,
+                  -0.082619309425354,
+                  -0.082619309425354,
+                  -0.09739833325147629,
+                  -0.1500527262687683,
+                  -0.0907902792096138,
+                  -0.05845804512500763,
+                  -0.0851614847779274,
+                  2.076831579208374,
+                  1.4212034940719604,
+                  -1.1266180276870728,
+                  -1.1266180276870728,
+                  -1.1266180276870728,
+                  3.247466802597046,
+                  -1.0155402421951294,
+                  -1.0155402421951294,
+                  -1.0155402421951294,
+                  -0.30238717794418335,
+                  -0.30238717794418335,
+                  -0.30238717794418335,
+                  -0.30238717794418335,
+                  -0.30238717794418335,
+                  -1.034310221672058,
+                  0,
+                  0,
+                  -0.8143283128738403,
+                  -0.34510645270347595,
+                  1.3900690078735352,
+                  -0.34510645270347595,
+                  -0.34510645270347595,
+                  -0.08561790734529495,
+                  -0.08561790734529495,
+                  -0.08561790734529495,
+                  -0.08561790734529495,
+                  -0.08561790734529495,
+                  -1.128381371498108,
+                  -1.0691726207733154,
+                  0.9645148515701294,
+                  -0.1031634658575058,
+                  -0.1031634658575058,
+                  -0.7500931024551392,
+                  -0.7500931024551392,
+                  -0.7500931024551392,
+                  -0.5264667868614197,
+                  0,
+                  0,
+                  -0.051990900188684464,
+                  -0.051990900188684464,
+                  -2.252042531967163,
+                  -0.5264667868614197,
+                  7.235748767852783,
+                  3.756598949432373,
+                  3.4791085720062256,
+                  4.26679801940918,
+                  1.2874109745025635,
+                  4.26679801940918,
+                  -1.3498504161834717,
+                  -0.37142014503479004,
+                  -2.501683473587036,
+                  -0.43194130063056946,
+                  -0.43194130063056946,
+                  -1.714809775352478,
+                  -0.5993016362190247,
+                  -0.20505809739917888
+                ],
+                [
+                  -0.9393368363380432,
+                  -0.09373331815004349,
+                  -0.20377075672149658,
+                  -0.09373331815004349,
+                  -0.08306530117988586,
+                  -0.33479759097099304,
+                  -0.17912784218788147,
+                  -0.17912784218788147,
+                  -0.3315407633781433,
+                  -0.33769527077674866,
+                  -0.3272348642349243,
+                  -0.10057771950960159,
+                  -0.3240419924259186,
+                  -1.8175104856491089,
+                  3.108051061630249,
+                  -0.6420265436172485,
+                  -0.6420265436172485,
+                  -0.6420265436172485,
+                  -0.08863081783056259,
+                  -0.24060308933258057,
+                  -0.2952660024166107,
+                  -0.038538675755262375,
+                  -0.6862884759902954,
+                  -0.6862884759902954,
+                  -0.6862884759902954,
+                  -0.6862884759902954,
+                  -0.6862884759902954,
+                  -1.5191974639892578,
+                  -0.18170833587646484,
+                  -0.18170833587646484,
+                  0.5798274278640747,
+                  -1.0620336532592773,
+                  -1.574965000152588,
+                  -1.0620336532592773,
+                  -1.0620336532592773,
+                  -0.5902056097984314,
+                  -0.5902056097984314,
+                  -0.5902056097984314,
+                  -0.5902056097984314,
+                  -0.5902056097984314,
+                  -1.027700424194336,
+                  -0.27963390946388245,
+                  -2.325180768966675,
+                  -1.1907678842544556,
+                  -1.1422964334487915,
+                  -0.3636098802089691,
+                  -0.3636098802089691,
+                  -0.3636098802089691,
+                  -0.3963003158569336,
+                  0,
+                  0,
+                  -0.7212229371070862,
+                  -0.7212229371070862,
+                  -0.8572686314582825,
+                  -0.34794607758522034,
+                  -0.7835819125175476,
+                  -0.7835819125175476,
+                  0,
+                  -0.031081313267350197,
+                  -3.727627754211426,
+                  -0.031081313267350197,
+                  10.18940544128418,
+                  1.740234375,
+                  0.37016457319259644,
+                  5.208679676055908,
+                  5.208679676055908,
+                  -0.392164021730423,
+                  -1.6496742963790894,
+                  0.3580871963840435
+                ],
+                [
+                  -0.4720131754875183,
+                  -0.10117539018392563,
+                  -0.2317756563425064,
+                  -0.10117539018392563,
+                  -0.08774657547473907,
+                  -0.18013688921928406,
+                  -0.14263415336608887,
+                  -0.14263415336608887,
+                  -0.1670864373445511,
+                  -0.2739619314670563,
+                  -0.1550973802804947,
+                  -0.10489343106746674,
+                  -0.14473044872283936,
+                  -1.5034310817718506,
+                  0.785349428653717,
+                  -0.3568350672721863,
+                  -0.3568350672721863,
+                  -0.3568350672721863,
+                  -2.3953359127044678,
+                  -0.10157624632120132,
+                  -0.10157624632120132,
+                  -0.061747319996356964,
+                  -0.39748355746269226,
+                  -0.39748355746269226,
+                  -0.39748355746269226,
+                  -0.39748355746269226,
+                  -0.39748355746269226,
+                  -1.2970860004425049,
+                  -0.021593190729618073,
+                  -0.021593190729618073,
+                  -0.4916243255138397,
+                  -0.4916243255138397,
+                  1.178537130355835,
+                  -0.4916243255138397,
+                  -0.4916243255138397,
+                  -0.271371990442276,
+                  -0.271371990442276,
+                  -0.271371990442276,
+                  -0.271371990442276,
+                  -0.271371990442276,
+                  -1.1831001043319702,
+                  -0.9630664587020874,
+                  1.7415573596954346,
+                  -0.2543461322784424,
+                  -0.2543461322784424,
+                  -0.7474250793457031,
+                  -0.7474250793457031,
+                  -0.7474250793457031,
+                  -0.9281257390975952,
+                  0,
+                  0,
+                  -0.1883855015039444,
+                  -0.1883855015039444,
+                  2.5588326454162598,
+                  -0.9281257390975952,
+                  -1.7961682081222534,
+                  -0.08517241477966309,
+                  -1.6902745962142944,
+                  -2.3015973567962646,
+                  6.693154811859131,
+                  -2.3015973567962646,
+                  -0.40241098403930664,
+                  0,
+                  7.022500991821289,
+                  -3.646273374557495,
+                  -3.646273374557495,
+                  3.5338845252990723,
+                  5.210987091064453,
+                  -0.42799082489333595
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "nl",
+        "Ik moet door nu."
+      ],
+      [
+        "nl",
+        "Ik ga door."
+      ],
+      [
+        "nl",
+        "Dag."
+      ],
+      [
+        "nl",
+        "Tot ziens."
+      ],
+      [
+        "nl",
+        "hallo"
+      ],
+      [
+        "nl",
+        "hey"
+      ],
+      [
+        "nl",
+        "howdy"
+      ],
+      [
+        "nl",
+        "Hey daar!"
+      ],
+      [
+        "nl",
+        "Goedendag!"
+      ],
+      [
+        "nl",
+        "Heb je broers of zussen?"
+      ],
+      [
+        "nl",
+        "Wie zijn jouw familieleden?"
+      ],
+      [
+        "nl",
+        "Kun je iets vertellen over je familie?"
+      ],
+      [
+        "nl",
+        "Wat zijn jouw hobby's?"
+      ],
+      [
+        "nl",
+        "Wat doe je graag in je vrije tijd?"
+      ],
+      [
+        "nl",
+        "Wat vind je leuk om te doen?"
+      ],
+      [
+        "nl",
+        "Hoe oud ben je?"
+      ],
+      [
+        "nl",
+        "Wat is je leeftijd?"
+      ],
+      [
+        "nl",
+        "Ben je ouder dan 30?"
+      ],
+      [
+        "nl",
+        "Wat is jouw naam?"
+      ],
+      [
+        "nl",
+        "Hoe heet jij?"
+      ],
+      [
+        "nl",
+        "Hoe mag ik je noemen?"
+      ],
+      [
+        "nl",
+        "Welke naam heb je gekregen?"
+      ],
+      [
+        "nl",
+        "Heb je een partner?"
+      ],
+      [
+        "nl",
+        "Ben je in een relatie?"
+      ],
+      [
+        "nl",
+        "Met wie woon je samen?"
+      ],
+      [
+        "nl",
+        "Werk je?"
+      ],
+      [
+        "nl",
+        "Wat doe je voor werk?"
+      ],
+      [
+        "nl",
+        "Waar focus je je op?"
+      ],
+      [
+        "nl",
+        "Waar woon je?"
+      ],
+      [
+        "nl",
+        "In welke stad woon je?"
+      ],
+      [
+        "nl",
+        "Waar ben je gevestigd?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "nl": {
+        "begroeting.dag": [
+          {
+            "answer": "Tot ziens!"
+          },
+          {
+            "answer": "Tot de volgende!"
+          },
+          {
+            "answer": "Doei!"
+          }
+        ],
+        "begroeting.hallo": [
+          {
+            "answer": "Hey, hallo!"
+          },
+          {
+            "answer": "Hallo!"
+          },
+          {
+            "answer": "Goedendag!"
+          }
+        ],
+        "informatie.familie": [
+          {
+            "answer": "Ik heb een zus die Alessa heet, een vader William, een moeder Doris en een tante."
+          },
+          {
+            "answer": "Mijn familie bestaat uit mijn ouders, mijn zus Alessa en een tante."
+          },
+          {
+            "answer": "Mijn vader heet William, mijn moeder Doris, en mijn zus heet Alessa."
+          }
+        ],
+        "informatie.hobby": [
+          {
+            "answer": "Ik hou van gamen, reizen en Pokémonkaarten verzamelen."
+          },
+          {
+            "answer": "In mijn vrije tijd speel ik graag games en verzamel ik Pokémonkaarten."
+          },
+          {
+            "answer": "Reizen en tijd doorbrengen met vrienden zijn mijn favoriete bezigheden."
+          }
+        ],
+        "informatie.leeftijd": [
+          {
+            "answer": "Ik ben 31 jaar oud."
+          },
+          {
+            "answer": "Mijn leeftijd is 31."
+          },
+          {
+            "answer": "Ja, ik ben 31 jaar."
+          }
+        ],
+        "informatie.naam": [
+          {
+            "answer": "Mijn naam is Cedric."
+          },
+          {
+            "answer": "Mijn ouders hebben met Cedric genoemd."
+          },
+          {
+            "answer": "Ik noem mezelf Cedric."
+          }
+        ],
+        "informatie.relatie": [
+          {
+            "answer": "Ja, ik heb een vriendin. Ze heet Laura."
+          },
+          {
+            "answer": "Ik woon samen met mijn vriendin Laura."
+          },
+          {
+            "answer": "Laura is mijn vriendin en we wonen samen in Ukkel."
+          }
+        ],
+        "informatie.studie": [
+          {
+            "answer": "Ik werk momenteel niet zodat ik me kan focussen op mijn studies."
+          },
+          {
+            "answer": "Mijn prioriteit ligt bij mijn studie, dus ik werk niet."
+          },
+          {
+            "answer": "Ik studeer en werk momenteel niet."
+          }
+        ],
+        "informatie.woonplaats": [
+          {
+            "answer": "Ik woon in Ukkel, samen met mijn vriendin."
+          },
+          {
+            "answer": "Mijn woonplaats is Ukkel."
+          },
+          {
+            "answer": "Ik ben gevestigd in Ukkel, België."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

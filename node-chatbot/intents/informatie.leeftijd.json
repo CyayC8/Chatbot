@@ -1,0 +1,12 @@
+{
+  "questions": [
+    "Hoe oud ben je?",
+    "Wat is je leeftijd?",
+    "Ben je ouder dan 30?"
+  ],
+  "answers": [
+    "Ik ben 31 jaar oud.",
+    "Mijn leeftijd is 31.",
+    "Ja, ik ben 31 jaar."
+  ]
+}
